@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101a22">
+    <meta name="description" content="Straightforward minor auto maintenance and brake service. See available services and request an appointment.">
+    <title>Wrench & Road | Local Auto Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Wrench and Road home">
+        <span class="brand-mark" aria-hidden="true">W</span>
+        <span>Wrench <span class="brand-amp">&</span> Road</span>
+      </a>
+      <a class="header-cta" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> LOCAL AUTO SERVICE</p>
+          <h1 id="hero-title">Good work.<br><span>Fair prices.</span></h1>
+          <p class="hero-copy">The little things that keep your car going. Straightforward maintenance and brake service, without the runaround.</p>
+          <a class="button button-primary" href="#services">See services <span aria-hidden="true">↓</span></a>
+          <p class="hero-note">Independent service · By appointment</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-ring"></div>
+          <svg class="wrench-art" viewBox="0 0 240 240" fill="none">
+            <path d="M151 38a70 70 0 0 0-82 89L28 168a27 27 0 0 0 38 38l41-41a70 70 0 0 0 90-83l-43 43-38-38 35-49Z" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="47" cy="187" r="8" fill="currentColor"/>
+          </svg>
+          <span class="art-caption">CARE THAT<br>KEEPS YOU MOVING</span>
+          <span class="art-star" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <section class="services section-wrap" id="services" aria-labelledby="services-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE EVERYDAY ESSENTIALS</p>
+            <h2 id="services-title">Services & pricing</h2>
+          </div>
+          <button class="text-button" id="manage-toggle" type="button" aria-expanded="false" aria-controls="service-manager">Manage services <span aria-hidden="true">＋</span></button>
+        </div>
+        <p class="section-intro">Clear starting prices. Final cost can vary by vehicle and parts—I'll confirm everything with you before work begins.</p>
+        <div id="service-list" class="service-list" aria-live="polite"></div>
+        <p class="price-note"><span aria-hidden="true">ⓘ</span> Prices shown are starting estimates. Parts, vehicle, and labor can affect the final quote.</p>
+
+        <section class="quoted-services" aria-labelledby="quoted-services-title">
+          <div class="quoted-heading">
+            <p class="eyebrow">LARGER JOBS & SPECIALTY SERVICE</p>
+            <h3 id="quoted-services-title">Services offered</h3>
+            <p>These jobs are quoted individually—contact me with your vehicle details for an estimate.</p>
+          </div>
+          <ul class="quoted-list">
+            <li>Timing chain and timing belt service</li>
+            <li>Water pump replacement</li>
+            <li>Diesel fuel filter service</li>
+            <li>Complete brake service</li>
+            <li>Engine swaps</li>
+            <li>Transmission swaps</li>
+            <li>Front-end rebuilds <span>(alignment not included)</span></li>
+          </ul>
+          <p class="quote-policy"><strong>How estimates are calculated:</strong> The total depends on the parts required for your specific vehicle, plus labor at the hourly rate based on the shop hours required for the job. I'll provide an estimate before work begins.</p>
+        </section>
+
+        <section class="manager-panel" id="service-manager" hidden aria-labelledby="manager-title">
+          <div class="manager-heading">
+            <div>
+              <p class="eyebrow">YOUR SERVICE MENU</p>
+              <h3 id="manager-title">Add or update a service</h3>
+            </div>
+            <button type="button" class="icon-button" id="close-manager" aria-label="Close service manager">×</button>
+          </div>
+          <p class="manager-help">Changes are saved on this device in this browser. You can edit or remove any service below.</p>
+          <form id="service-form" class="service-form">
+            <input id="service-id" type="hidden">
+            <div class="form-field">
+              <label for="service-name">Service name</label>
+              <input id="service-name" name="name" type="text" maxlength="60" placeholder="e.g. Front brake pads" required>
+            </div>
+            <div class="form-field">
+              <label for="service-price">Starting price ($)</label>
+              <input id="service-price" name="price" type="number" min="0" max="99999" step="1" placeholder="e.g. 149" required>
+            </div>
+            <div class="form-field form-field-wide">
+              <label for="service-description">Short description <span class="optional">(optional)</span></label>
+              <input id="service-description" name="description" type="text" maxlength="120" placeholder="What does this service include?">
+            </div>
+            <button class="button button-dark form-field-wide" type="submit" id="save-service">Add service <span aria-hidden="true">＋</span></button>
+            <button class="cancel-edit form-field-wide" type="button" id="cancel-edit" hidden>Cancel editing</button>
+          </form>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <button class="reset-button" type="button" id="reset-services">Restore example services</button>
+        </section>
+      </section>
+
+      <section class="about-band" aria-labelledby="about-title">
+        <div class="about-inner">
+          <div class="about-icon" aria-hidden="true">✳</div>
+          <div>
+            <p class="eyebrow">NO SURPRISES</p>
+            <h2 id="about-title">Your car. Your call.</h2>
+            <p>You'll get a clear estimate before any work starts. No pressure, no mystery charges—just honest help with the maintenance your car needs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-wrap" id="contact" aria-labelledby="contact-title">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">READY WHEN YOU ARE</p>
+            <h2 id="contact-title">Let's get you<br>back on the road.</h2>
+            <p class="contact-copy">Reach out with your vehicle and what it needs. I'll get back to you with next steps.</p>
+          </div>
+          <a class="button button-primary contact-button" id="contact-link" href="mailto:hello@example.com?subject=Service%20request">Request an appointment <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="contact-placeholder" id="contact-hint">Before publishing, update the email address in <code>script.js</code> to your own.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#" aria-label="Wrench and Road home"><span class="brand-mark" aria-hidden="true">W</span><span>Wrench <span class="brand-amp">&</span> Road</span></a>
+      <p>Independent service. Done with care.</p>
+      <span class="copyright">© <span id="year"></span> Wrench & Road</span>
+    </footer>
+  </body>
+</html>
