@@ -44,7 +44,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   color: var(--white); background: var(--orange); font-size: 16px;
 }
 .brand-amp { color: var(--orange); }
-.header-cta { color: var(--ink); text-decoration: none; font-size: 13px; font-weight: 700; }
+.header-cta { color: var(--ink); text-decoration: none; font-size: 14px; font-weight: 700; }
 .header-cta span { margin-left: 5px; color: var(--orange); }
 .hero {
   position: relative; min-height: 490px; padding: 64px max(9%, calc((100% - 1080px) / 2)) 70px;
@@ -52,23 +52,23 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   overflow: hidden; color: #fff; background: #16232c;
 }
 .hero-content { max-width: 530px; position: relative; z-index: 1; }
-.eyebrow { margin: 0 0 15px; color: var(--orange-dark); font-size: 10px; line-height: 1.4; letter-spacing: 1.6px; font-weight: 700; }
+.eyebrow { margin: 0 0 15px; color: var(--orange-dark); font-size: 11px; line-height: 1.4; letter-spacing: 1.6px; font-weight: 700; }
 .hero .eyebrow { color: #e6a184; }
 .status-dot { display: inline-block; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%; background: #84bb90; }
 h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
 h1 { margin-bottom: 18px; font-size: clamp(46px, 6vw, 72px); line-height: .99; letter-spacing: -3.4px; }
 h1 span { color: #f18052; }
-.hero-copy { max-width: 410px; margin-bottom: 25px; color: #c3cdd0; font-size: 15px; line-height: 1.75; }
+.hero-copy { max-width: 410px; margin-bottom: 25px; color: #c3cdd0; font-size: 16px; line-height: 1.75; }
 .button {
   min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 23px;
   padding: 0 20px; border: 0; border-radius: 5px; text-decoration: none;
-  font-size: 13px; font-weight: 700; cursor: pointer; transition: background .18s ease, transform .18s ease;
+  font-size: 14px; font-weight: 700; cursor: pointer; transition: background .18s ease, transform .18s ease;
 }
 .button:hover { transform: translateY(-1px); }
 .button-primary { color: #fff; background: var(--orange); }
 .button-primary:hover { background: #cf5730; }
-.hero-note { margin: 17px 0 0; color: #a8b7bc; font-size: 11px; }
+.hero-note { margin: 17px 0 0; color: #a8b7bc; font-size: 12px; }
 .hero-art { width: 325px; height: 325px; flex: 0 0 325px; position: relative; display: grid; place-items: center; color: #f18153; }
 .art-ring { position: absolute; width: 270px; height: 270px; border: 1px solid #657178; border-radius: 50%; }
 .art-ring::before, .art-ring::after { position: absolute; content: ''; border: 1px solid #3b4c55; border-radius: 50%; }
@@ -86,7 +86,7 @@ h2 { margin-bottom: 0; font-size: clamp(29px, 4vw, 39px); line-height: 1.12; let
   color: var(--green); background: transparent; font-size: 12px; font-weight: 700; cursor: pointer;
 }
 .text-button span { padding-left: 4px; font-size: 16px; }
-.section-intro { max-width: 600px; margin: 15px 0 28px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.section-intro { max-width: 600px; margin: 15px 0 28px; color: var(--muted); font-size: 14px; line-height: 1.7; }
 .service-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .service-card {
   min-height: 116px; padding: 21px 22px; display: flex; justify-content: space-between; align-items: center; gap: 16px;
@@ -99,35 +99,35 @@ h2 { margin-bottom: 0; font-size: clamp(29px, 4vw, 39px); line-height: 1.12; let
   border-radius: 50%; color: var(--green); background: #edf3ee; font-size: 16px;
 }
 .service-details { min-width: 0; flex: 1; }
-.service-details h3 { margin: 0 0 5px; font-size: 15px; letter-spacing: -.3px; }
-.service-details p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.55; }
+.service-details h3 { margin: 0 0 5px; font-size: 16px; letter-spacing: -.3px; }
+.service-details p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
 .service-price { flex: 0 0 auto; text-align: right; white-space: nowrap; }
-.service-price span { display: block; color: var(--muted); font-size: 9px; }
-.service-price strong { display: block; margin-top: 2px; font-family: 'Space Grotesk', sans-serif; font-size: 21px; letter-spacing: -.7px; }
+.service-price span { display: block; color: var(--muted); font-size: 10px; }
+.service-price strong { display: block; margin-top: 2px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; letter-spacing: -.7px; }
 .service-actions { display: flex; justify-content: flex-end; gap: 6px; margin-top: 8px; }
 .service-actions button { padding: 5px 7px; border: 0; border-radius: 3px; color: var(--green); background: #edf3ee; font-size: 10px; font-weight: 700; cursor: pointer; }
 .service-actions .delete-service { color: #a63d1c; background: #fbefeb; }
 .empty-services { padding: 24px; grid-column: 1 / -1; color: var(--muted); text-align: center; border: 1px dashed #cfd7d0; border-radius: 7px; }
-.price-note { margin: 18px 0 0; color: var(--muted); font-size: 10px; line-height: 1.6; }
+.price-note { margin: 18px 0 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
 .price-note span { margin-right: 5px; color: var(--green); }
 .quoted-services { margin-top: 40px; padding: 27px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
 .quoted-heading .eyebrow { margin-bottom: 7px; }
 .quoted-heading h3 { margin: 0; font-size: 24px; letter-spacing: -.7px; }
-.quoted-heading > p:last-child { margin: 8px 0 18px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.quoted-heading > p:last-child { margin: 8px 0 18px; color: var(--muted); font-size: 13px; line-height: 1.6; }
 .quoted-list { margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; list-style: none; }
-.quoted-list li { position: relative; padding: 11px 8px 11px 20px; border-top: 1px solid var(--line); color: var(--ink); font-size: 12px; line-height: 1.5; }
-.quoted-list li::before { position: absolute; left: 2px; color: var(--orange-dark); content: "＋"; font-weight: 700; }
+.quoted-list li { position: relative; padding: 11px 8px 11px 20px; border-top: 1px solid var(--line); color: var(--ink); font-size: 13px; line-height: 1.5; }
+.quoted-list li::before { position: absolute; top: 50%; left: 5px; width: 5px; height: 5px; border-radius: 50%; background: var(--orange-dark); content: ""; transform: translateY(-50%); }
 .quoted-list li span { color: var(--muted); }
-.quote-policy { margin: 18px 0 0; padding: 14px 16px; border-left: 3px solid var(--orange); color: #43524f; background: #f3f6f1; font-size: 11px; line-height: 1.7; }
+.quote-policy { margin: 18px 0 0; padding: 14px 16px; border-left: 3px solid var(--orange); color: #43524f; background: #f3f6f1; font-size: 12px; line-height: 1.7; }
 .quote-policy strong { color: var(--ink); }
 .manager-panel { margin-top: 25px; padding: 22px; border: 1px solid #dfe6df; border-radius: 8px; background: #edf2eb; }
 .manager-heading { display: flex; justify-content: space-between; align-items: flex-start; }
 .manager-heading .eyebrow { margin-bottom: 6px; }
 .manager-heading h3 { margin: 0; font-size: 20px; letter-spacing: -.5px; }
 .icon-button { width: 36px; height: 36px; border: 1px solid #d4ddd4; border-radius: 50%; color: var(--ink); background: #fff; font-size: 23px; cursor: pointer; }
-.manager-help { margin: 10px 0 20px; color: var(--muted); font-size: 11px; line-height: 1.6; }
+.manager-help { margin: 10px 0 20px; color: var(--muted); font-size: 12px; line-height: 1.6; }
 .service-form { display: grid; grid-template-columns: 2fr 1fr; gap: 13px; }
-.form-field label { display: block; margin-bottom: 6px; font-size: 11px; font-weight: 700; }
+.form-field label { display: block; margin-bottom: 6px; font-size: 12px; font-weight: 700; }
 .form-field input { width: 100%; min-height: 43px; padding: 0 11px; border: 1px solid #d7ded7; border-radius: 4px; color: var(--ink); background: #fff; font-size: 13px; }
 .form-field input::placeholder { color: #87918e; }
 .form-field-wide { grid-column: 1 / -1; }
@@ -143,14 +143,14 @@ h2 { margin-bottom: 0; font-size: clamp(29px, 4vw, 39px); line-height: 1.12; let
 .about-icon { width: 57px; height: 57px; display: grid; place-items: center; border-radius: 50%; color: #fff; background: var(--green); font-size: 26px; }
 .about-inner .eyebrow { margin-bottom: 7px; }
 .about-inner h2 { font-size: 29px; }
-.about-inner p:last-child { max-width: 590px; margin: 11px 0 0; color: #596966; font-size: 13px; line-height: 1.75; }
+.about-inner p:last-child { max-width: 590px; margin: 11px 0 0; color: #596966; font-size: 14px; line-height: 1.75; }
 .contact { padding-top: 76px; padding-bottom: 45px; }
 .contact-card { padding: 36px 40px; display: flex; justify-content: space-between; align-items: center; gap: 28px; border-radius: 8px; color: #fff; background: #1b2b33; }
 .contact-card .eyebrow { color: #e6a184; }
 .contact-card h2 { font-size: 34px; }
-.contact-copy { max-width: 410px; margin: 11px 0 0; color: #c3cdd0; font-size: 12px; line-height: 1.7; }
+.contact-copy { max-width: 410px; margin: 11px 0 0; color: #c3cdd0; font-size: 13px; line-height: 1.7; }
 .contact-button { flex: 0 0 auto; }
-.contact-placeholder { margin: 12px 0 0; color: var(--muted); font-size: 10px; text-align: center; }
+.contact-placeholder { margin: 12px 0 0; color: var(--muted); font-size: 11px; text-align: center; }
 .contact-placeholder code { font-size: inherit; }
 .site-footer {
   min-height: 78px; padding: 18px max(6.5%, calc((100% - 1160px) / 2)); display: flex;
@@ -158,36 +158,36 @@ h2 { margin-bottom: 0; font-size: clamp(29px, 4vw, 39px); line-height: 1.12; let
 }
 .footer-brand { font-size: 14px; }
 .footer-brand .brand-mark { width: 25px; height: 25px; font-size: 13px; }
-.site-footer p, .copyright { margin: 0; color: var(--muted); font-size: 10px; }
+.site-footer p, .copyright { margin: 0; color: var(--muted); font-size: 11px; }
 
 @media (max-width: 650px) {
   .site-header { height: 64px; padding: 0 20px; }
   .brand { gap: 8px; font-size: 15px; }
-  .header-cta { font-size: 11px; }
+  .header-cta { font-size: 12px; }
   .hero { min-height: 420px; padding: 57px 24px 54px; }
   .hero-content { max-width: 100%; }
   h1 { font-size: clamp(48px, 13vw, 66px); }
-  .hero-copy { max-width: 340px; font-size: 14px; }
+  .hero-copy { max-width: 340px; font-size: 15px; }
   .hero-art { position: absolute; width: 170px; height: 170px; right: -60px; bottom: 6px; opacity: .16; }
   .art-ring { width: 150px; height: 150px; }
   .wrench-art { width: 95px; }
   .art-caption, .art-star { display: none; }
   .section-wrap { padding: 58px 20px; }
   .section-heading { align-items: center; }
-  .section-heading .eyebrow { font-size: 9px; }
+  .section-heading .eyebrow { font-size: 10px; }
   h2 { font-size: 29px; }
-  .text-button { max-width: 120px; font-size: 11px; }
-  .section-intro { margin: 12px 0 22px; font-size: 12px; }
+  .text-button { max-width: 120px; font-size: 12px; }
+  .section-intro { margin: 12px 0 22px; font-size: 13px; }
   .service-list { grid-template-columns: 1fr; gap: 9px; }
   .service-card { min-height: 105px; padding: 17px 15px; gap: 12px; }
   .service-card-editing { grid-template-columns: 36px minmax(0, 1fr) auto; }
-  .service-details h3 { font-size: 14px; }
-  .service-details p { font-size: 10px; }
+  .service-details h3 { font-size: 15px; }
+  .service-details p { font-size: 11px; }
   .service-price strong { font-size: 19px; }
   .quoted-services { margin-top: 30px; padding: 19px 16px; }
   .quoted-heading h3 { font-size: 22px; }
   .quoted-list { grid-template-columns: 1fr; }
-  .quoted-list li { font-size: 11px; }
+  .quoted-list li { font-size: 12px; }
   .quote-policy { padding: 12px; }
   .manager-panel { padding: 17px; }
   .service-form { grid-template-columns: 1fr 1fr; }
@@ -195,7 +195,7 @@ h2 { margin-bottom: 0; font-size: clamp(29px, 4vw, 39px); line-height: 1.12; let
   .about-inner { grid-template-columns: 43px 1fr; gap: 15px; }
   .about-icon { width: 42px; height: 42px; font-size: 20px; }
   .about-inner h2 { font-size: 25px; }
-  .about-inner p:last-child { font-size: 12px; }
+  .about-inner p:last-child { font-size: 13px; }
   .contact { padding-top: 52px; padding-bottom: 35px; }
   .contact-card { padding: 26px 22px; align-items: flex-start; flex-direction: column; gap: 20px; }
   .contact-card h2 { font-size: 31px; }
