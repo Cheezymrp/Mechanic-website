@@ -10,7 +10,6 @@ const publicServices = [
     description: 'Brake pad replacement. Price of pads not included.',
   },
 ];
-const contactEmail = 'hello@example.com'; // Replace with your business email before publishing.
 const serviceList = document.querySelector('#service-list');
 const icons = ['⚙', '◉'];
 
@@ -42,9 +41,4 @@ publicServices.forEach((service, index) => {
   serviceList.append(card);
 });
 
-const contactLink = document.querySelector('#contact-link');
-if (contactEmail !== 'hello@example.com') {
-  contactLink.href = `mailto:${encodeURIComponent(contactEmail)}?subject=Service%20request`;
-  document.querySelector('#contact-hint').hidden = true;
-}
 document.querySelector('#year').textContent = new Date().getFullYear();
